@@ -1,92 +1,92 @@
 
-/*----------  Start  ----------*/
+/* ----------  Start  ---------- */
 .ais {
-    align-items: start;
+  align-items: start;
+}
+
+.acs {
+  align-content: start;
+}
+
+.ass {
+  align-self: start;
+}
+
+.jcs {
+  justify-content: start;
+}
+
+.jis {
+  justify-items: start;
+}
+
+.jss {
+  justify-self: start;
+}
+
+/* ----------  Center  ---------- */
+
+.aic {
+  align-items: center;
 }
 
 .acc {
-    align-content: start;
+  align-content: center;
 }
 
 .asc {
-    align-self: start;
+  align-self: center;
 }
 
 .jcc {
-    justify-content: start;
+  justify-content: center;
 }
 
 .jic {
-    justify-items: start;
+  justify-items: center;
 }
 
 .jsc {
-    justify-self: start;
+  justify-self: center;
 }
 
-/*----------  Center  ----------*/
+/* ----------  End  ---------- */
 
-.ais {
-    align-items: center;
+.aie {
+  align-items: end;
 }
 
-.acc {
-    align-content: center;
+.ace {
+  align-content: end;
 }
 
-.asc {
-    align-self: center;
+.ase {
+  align-self: end;
 }
 
-.jcc {
-    justify-content: center;
+.jce {
+  justify-content: end;
 }
 
-.jic {
-    justify-items: center;
+.jie {
+  justify-items: end;
 }
 
-.jsc {
-    justify-self: center;
-}
-
-/*----------  End  ----------*/
-
-.ais {
-    align-items: end;
-}
-
-.acc {
-    align-content: end;
-}
-
-.asc {
-    align-self: end;
-}
-
-.jcc {
-    justify-content: end;
-}
-
-.jic {
-    justify-items: end;
-}
-
-.jsc {
-    justify-self: end;
+.jse {
+  justify-self: end;
 }
 
 
-/*----------  Justify  ----------*/
+/* ----------  Justify  ---------- */
 
 .jcsa {
-    justify-content: space-around;
+  justify-content: space-around;
 }
 
 .jcsb {
-    justify-content: space-between;
+  justify-content: space-between;
 }
 
 .jcse {
-    justify-content: space-evenly;
+  justify-content: space-evenly;
 }
