@@ -1,9 +1,20 @@
 @use 'colors';
+@import "align";
+
+$break-medium: 720px;
+$break-large: 1024px;
+
+/*----------  Container  ----------*/
+
+.d-grid {
+  display: grid;
+}
 
 @mixin container-basics {
   display: grid;
   width: 100%;
   height: 100%;
+  grid-auto-rows: auto;
 }
 
 .container {
@@ -24,6 +35,8 @@
     }
   }
 }
+
+/*----------  Default Columns and Rows ----------*/
 
 //   columns col-{}
 @for $i from 1 through 12 {
@@ -67,6 +80,125 @@
     .area-#{$i}-#{$j} {
       grid-column: span #{$i};
       grid-row: span #{$j};
+    }
+  }
+}
+
+/*----------  Rows and Columns ----------*/
+
+//   columns col-sm-{}
+@for $i from 1 through 12 {
+  .col-sm-#{$i} {
+    grid-column: span #{$i} !important;
+    grid-row: span 12;
+  }
+}
+
+// columns combination col-sm-{start}-{span}
+@for $i from 1 through 12 {
+  @for $j from 1 through 12 {
+    .col-sm-#{$i}-#{$j} {
+      grid-column: #{$i}/span #{$j} !important;
+      grid-row: span 12;
+    }
+  }
+}
+
+//   rows row-sm-{}
+@for $i from 1 through 12 {
+  .row-sm-#{$i} {
+    grid-row: span #{$i} !important;
+    grid-column: span 12;
+  }
+}
+
+// columns combination row-sm-{start}-{span}
+@for $i from 1 through 12 {
+  @for $j from 1 through 12 {
+    .row-sm-#{$i}-#{$j} {
+      grid-row: #{$i}/span #{$j} !important;
+      grid-column: span 12;
+    }
+  }
+}
+
+/*----------  Media Queries  ----------*/
+
+
+@media screen and (min-width: $break-medium) {
+  //   columns col-md-{}
+  @for $i from 1 through 12 {
+    .col-md-#{$i} {
+      grid-column: span #{$i} !important;
+      grid-row: span 12;
+    }
+  }
+
+  // columns combination col-md-{start}-{span}
+  @for $i from 1 through 12 {
+    @for $j from 1 through 12 {
+      .col-md-#{$i}-#{$j} {
+        grid-column: #{$i}/span #{$j} !important;
+        grid-row: span 12;
+      }
+    }
+  }
+
+  //   rows row-md-{}
+  @for $i from 1 through 12 {
+    .row-md-#{$i} {
+      grid-row: span #{$i} !important;
+      grid-column: span 12;
+    }
+  }
+
+  // columns combination row-md-{start}-{span}
+  @for $i from 1 through 12 {
+    @for $j from 1 through 12 {
+      .row-md-#{$i}-#{$j} {
+        grid-row: #{$i}/span #{$j} !important;
+        grid-column: span 12;
+      }
+    }
+  }
+}
+
+
+
+@media screen and (min-width: $break-large) {
+   //   columns col-lg-{}
+   @for $i from 1 through 12 {
+    .col-lg-#{$i} {
+      grid-column: span #{$i} !important;
+      grid-row: span 12;
+    }
+  }
+
+  // columns combination col-lg-{start}-{span}
+  @for $i from 1 through 12 {
+    @for $j from 1 through 12 {
+      .col-lg-#{$i}-#{$j} {
+        grid-column: #{$i}/span #{$j} !important;
+        grid-row: span 12;
+      }
+    }
+  }
+
+  //   rows row-lg-{}
+  @for $i from 1 through 12 {
+    .row-lg-#{$i} {
+      grid-row: span #{$i} !important;
+      grid-column: span 12;
+    }
+  }
+
+  // columns combination row-lg-{start}-{span}
+  @for $i from 1 through 12 {
+    @for $j from 1 through 12 {
+      .row-lg-#{$i}-#{$j} {
+        grid-row: #{$i}/span #{$j} !important;
+        grid-column: span 12;
+      }
     }
   }
 }
