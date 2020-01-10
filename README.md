@@ -1,4 +1,4 @@
-#Outgrid
+# Outgrid
 
 > A 12-col CSS Framework built on top of CSS Grid
 
