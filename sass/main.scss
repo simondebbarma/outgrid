@@ -26,7 +26,27 @@ $break-large: 1024px;
   grid-template-rows: repeat(12, 1fr);
 }
 
-// containers
+@for $i from 1 through 20 {
+  .container-autofit-#{$i*50} {
+    grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
+  }
+
+  .container-autofill-#{$i*50} {
+    grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
+  }
+}
+
+@for $i from 1 through 20 {
+  .container-autofit-sm-#{$i*50} {
+    grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
+  }
+
+  .container-autofill-sm-#{$i*50} {
+    grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
+  }
+}
+
+// combinations {x}-{y}
 @for $i from 1 through 12 {
   @for $j from 1 through 12 {
     .container-#{$i}-#{$j} {
@@ -91,6 +111,16 @@ $break-large: 1024px;
 /* ----------  Media Queries  ---------- */
 
 @media screen and (min-width: $break-medium) {
+  @for $i from 1 through 20 {
+    .container-autofit-md-#{$i*50} {
+      grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
+    }
+  
+    .container-autofill-md-#{$i*50} {
+      grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
+    }
+  }  
+  
   //   columns col-md-{}
   @for $i from 1 through 12 {
     .col-md-#{$i} {
@@ -121,6 +151,16 @@ $break-large: 1024px;
 }
 
 @media screen and (min-width: $break-large) {
+  @for $i from 1 through 20 {
+    .container-autofit-lg-#{$i*50} {
+      grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
+    }
+  
+    .container-autofill-lg-#{$i*50} {
+      grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
+    }
+  }
+  
   //   columns col-lg-{}
   @for $i from 1 through 12 {
     .col-lg-#{$i} {
