@@ -1,6 +1,14 @@
 $spacing: 0.5;
 
 @for $i from 0 through 5 {
+  .cg-#{$i} {
+    column-gap: $i*$spacing*1rem;
+  }
+
+  .cr-#{$i} {
+    row-gap: $i*$spacing*1rem;
+  }
+
   .p-#{$i} {
     padding: $i*$spacing*1rem;
   }
