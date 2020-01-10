@@ -1,32 +1,72 @@
+@use 'colors';
+
+@mixin container-basics {
+  display: grid;
+  width: 100%;
+  height: 100%;
+}
+
 .container {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(12, 1fr);
+  @include container-basics();
+
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
 }
 
-.col-1 {
-    grid-column: span 1;
+// containers
+@for $i from 1 through 12 {
+  @for $j from 1 through 12 {
+    .container-#{$i}-#{$j} {
+      @include container-basics();
+
+      grid-template-columns: repeat(#{$i}, 1fr);
+      grid-template-rows: repeat(#{$j}, 1fr);
+    }
+  }
 }
 
-.area-1-1 {
-    grid-column: span 1;
-    grid-row: span 1;
+//   columns col-{}
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    grid-column: span #{$i} !important;
+    grid-row: span 12;
+  }
 }
 
-.col-2 {
-    grid-column: span 2;
+// columns combination col-{start}-{span}
+@for $i from 1 through 12 {
+  @for $j from 1 through 12 {
+    .col-#{$i}-#{$j} {
+      grid-column: #{$i}/span #{$j} !important;
+      grid-row: span 12;
+    }
+  }
 }
 
-.area-2-1 {
-    grid-column: span 2;
-    grid-row: span 1;
+//   rows row-{}
+@for $i from 1 through 12 {
+  .row-#{$i} {
+    grid-row: span #{$i} !important;
+    grid-column: span 12;
+  }
 }
 
-.col-3 {
-    grid-column: span 3;
+// columns combination row-{start}-{span}
+@for $i from 1 through 12 {
+  @for $j from 1 through 12 {
+    .row-#{$i}-#{$j} {
+      grid-row: #{$i}/span #{$j} !important;
+      grid-column: span 12;
+    }
+  }
 }
 
-.area-3-1 {
-    grid-column: span 3;
-    grid-row: span 1;
+// areas
+@for $i from 1 through 12 {
+  @for $j from 1 through 12 {
+    .area-#{$i}-#{$j} {
+      grid-column: span #{$i};
+      grid-row: span #{$j};
+    }
+  }
 }
