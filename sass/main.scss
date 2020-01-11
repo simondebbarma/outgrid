@@ -8,14 +8,18 @@ $break-large: 1024px;
 
 /* ----------  Container  ---------- */
 
-.d-grid {
+@mixin grid {
   display: grid;
 }
 
 @mixin container-basics {
-  display: grid;
+  @include grid();
   width: 100%;
   height: 100%;
+}
+
+.d-grid {
+  @include grid();
 }
 
 .container {
@@ -25,6 +29,13 @@ $break-large: 1024px;
   grid-template-rows: repeat(12, 1fr);
 }
 
+.container-percentage {
+  @include container-basics();
+
+  grid-template-columns: repeat(12, round(percentage(1/12)));
+  grid-template-rows: repeat(12, round(percentage(1/12)));
+}
+
 .container-auto-rows {
   @include container-basics();
   grid-auto-rows: auto;
@@ -32,6 +43,7 @@ $break-large: 1024px;
   grid-template-rows: repeat(12, 1fr);
 }
 
+// #region autofit & autofill
 @for $i from 1 through 20 {
   .container-autofit-#{$i*50} {
     grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
@@ -51,8 +63,9 @@ $break-large: 1024px;
     grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
   }
 }
+// #endregion autofit & autofill
 
-// combinations {x}-{y}
+// #region containers/areas combinations {x}-{y} by 12
 @for $i from 1 through 12 {
   @for $j from 1 through 12 {
     .container-#{$i}-#{$j} {
@@ -62,91 +75,92 @@ $break-large: 1024px;
       grid-template-rows: repeat(#{$j}, 1fr);
     }
 
-    .col-#{$i}-#{$j} {
-      grid-column: #{$i}/span #{$j};
-      grid-row: span 12;
+    .container-sm-#{$i}-#{$j} {
+      @include container-basics();
+
+      grid-template-columns: repeat(#{$i}, 1fr);
+      grid-template-rows: repeat(#{$j}, 1fr);
     }
 
-    .col-sm-#{$i}-#{$j} {
-      grid-column: #{$i}/span #{$j};
-      grid-row: span 12;
-    }
-
-    .row-#{$i}-#{$j} {
-      grid-row: #{$i}/span #{$j};
-      grid-column: span 12;
-    }
-
-    .row-sm-#{$i}-#{$j} {
-      grid-row: #{$i}/span #{$j};
-      grid-column: span 12;
+    .container-percentage-#{$i}-#{$j} {
+      @include container-basics();
+    
+      grid-template-columns: repeat(#{$i}, round(percentage(1/$i)));
+      grid-template-rows: repeat(#{$j}, round(percentage(1/$j)));
     }
 
     .area-#{$i}-#{$j} {
-      grid-column: span #{$i};
-      grid-row: span #{$j};
+      grid-column: auto / span #{$i};
+      grid-row: auto / span #{$j};
+    }
+
+    .area-sm-#{$i}-#{$j} {
+      grid-column: auto / span #{$i};
+      grid-row: auto / span #{$j};
     }
   }
 }
+// #endregion combinations {x}-{y} by 12
 
-/* ----------  Default Columns and Rows ---------- */
-
-//   columns col-{} ////  rows row-{}
+// #region columns/rows-{start}
+// columns col-{} ////  rows row-{}
 @for $i from 1 through 12 {
   .col-#{$i} {
-    grid-column: span #{$i};
+    grid-column-start: #{$i};
+  }
+  
+  .col-sm-#{$i} {
+    grid-column-start: #{$i};
   }
 
   .row-#{$i} {
-    grid-row: span #{$i};
-  }
-
-  .col-sm-#{$i} {
-    grid-column: span #{$i};
+    grid-row-start: #{$i};
   }
 
   .row-sm-#{$i} {
-    grid-row: span #{$i};
+    grid-row-start: #{$i};
   }
 }
+// #endregion columns/rows-{start}
 
-/* ----------  Media Queries  ---------- */
-
+// #region Media Queries
 @media screen and (min-width: $break-medium) {
   @for $i from 1 through 20 {
     .container-autofit-md-#{$i*50} {
+      @include container-basics();
       grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
     }
   
     .container-autofill-md-#{$i*50} {
+      
       grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
     }
   }  
   
-  //   columns col-md-{}
+  //   columns/rows col/row-md-{}
   @for $i from 1 through 12 {
     .col-md-#{$i} {
-      grid-column: span #{$i};
-      grid-row: span 12;
+      grid-column-start: #{$i};
     }
 
     .row-md-#{$i} {
-      grid-row: span #{$i};
-      grid-column: span 12;
+      grid-row-start: #{$i};
     }
   }
 
   // columns combination col-md-{start}-{span}
   @for $i from 1 through 12 {
     @for $j from 1 through 12 {
-      .col-md-#{$i}-#{$j} {
-        grid-column: #{$i}/span #{$j};
-        grid-row: span 12;
+      .area-md-#{$i}-#{$j} {
+        grid-column: auto / span #{$i};
+        grid-row: auto / span #{$j};
       }
 
-      .row-md-#{$i}-#{$j} {
-        grid-row: #{$i}/span #{$j};
-        grid-column: span 12;
+      .container-md-#{$i}-#{$j} {
+        @include container-basics();
+  
+        grid-template-columns: repeat(#{$i}, 1fr);
+        grid-template-rows: repeat(#{$j}, 1fr);
       }
     }
   }
@@ -155,39 +169,42 @@ $break-large: 1024px;
 @media screen and (min-width: $break-large) {
   @for $i from 1 through 20 {
     .container-autofit-lg-#{$i*50} {
+      @include container-basics();
       grid-template-columns: repeat(auto-fit, minmax(#{$i*50}px,1fr));
     }
   
     .container-autofill-lg-#{$i*50} {
+      @include container-basics();
       grid-template-columns: repeat(auto-fill, minmax(#{$i*50}px,1fr));
     }
-  }
+  }  
   
-  //   columns col-lg-{}
+  //   columns/rows col/row-md-{}
   @for $i from 1 through 12 {
     .col-lg-#{$i} {
-      grid-column: span #{$i};
-      grid-row: span 12;
+      grid-column-start: #{$i};
     }
 
     .row-lg-#{$i} {
-      grid-row: span #{$i};
-      grid-column: span 12;
+      grid-row-start: #{$i};
     }
   }
 
-  // columns combination col-lg-{start}-{span}
+  // columns combination col-md-{start}-{span}
   @for $i from 1 through 12 {
     @for $j from 1 through 12 {
-      .col-lg-#{$i}-#{$j} {
-        grid-column: #{$i}/span #{$j};
-        grid-row: span 12;
+      .area-lg-#{$i}-#{$j} {
+        grid-column: auto / span #{$i};
+        grid-row: auto / span #{$j};
       }
 
-      .row-lg-#{$i}-#{$j} {
-        grid-row: #{$i}/span #{$j};
-        grid-column: span 12;
+      .container-lg-#{$i}-#{$j} {
+        @include container-basics();
+  
+        grid-template-columns: repeat(#{$i}, 1fr);
+        grid-template-rows: repeat(#{$j}, 1fr);
       }
     }
   }
 }
+// #endregion Media Queries
