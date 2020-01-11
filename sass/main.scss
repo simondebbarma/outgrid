@@ -95,22 +95,18 @@ $break-large: 1024px;
 @for $i from 1 through 12 {
   .col-#{$i} {
     grid-column: span #{$i};
-    grid-row: span 12;
   }
 
   .row-#{$i} {
-    grid-row: #{$i};
-    grid-column: span 12;
+    grid-row: span #{$i};
   }
 
   .col-sm-#{$i} {
     grid-column: span #{$i};
-    grid-row: span 12;
   }
 
   .row-sm-#{$i} {
     grid-row: span #{$i};
-    grid-column: span 12;
   }
 }
 
