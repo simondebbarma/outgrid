@@ -1,7 +1,7 @@
-@use 'colors';
-
 @import "align";
 @import "spacing";
+@import "media";
+@import "color";
 
 $break-medium: 720px;
 $break-large: 1024px;
@@ -16,12 +16,18 @@ $break-large: 1024px;
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
 }
 
 .container {
   @include container-basics();
 
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.container-auto-rows {
+  @include container-basics();
+  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr);
 }
@@ -57,22 +63,22 @@ $break-large: 1024px;
     }
 
     .col-#{$i}-#{$j} {
-      grid-column: #{$i}/span #{$j} !important;
+      grid-column: #{$i}/span #{$j};
       grid-row: span 12;
     }
 
     .col-sm-#{$i}-#{$j} {
-      grid-column: #{$i}/span #{$j} !important;
+      grid-column: #{$i}/span #{$j};
       grid-row: span 12;
     }
 
     .row-#{$i}-#{$j} {
-      grid-row: #{$i}/span #{$j} !important;
+      grid-row: #{$i}/span #{$j};
       grid-column: span 12;
     }
 
     .row-sm-#{$i}-#{$j} {
-      grid-row: #{$i}/span #{$j} !important;
+      grid-row: #{$i}/span #{$j};
       grid-column: span 12;
     }
 
@@ -88,22 +94,22 @@ $break-large: 1024px;
 //   columns col-{} ////  rows row-{}
 @for $i from 1 through 12 {
   .col-#{$i} {
-    grid-column: span #{$i} !important;
+    grid-column: span #{$i};
     grid-row: span 12;
   }
 
   .row-#{$i} {
-    grid-row: span #{$i} !important;
+    grid-row: #{$i};
     grid-column: span 12;
   }
 
   .col-sm-#{$i} {
-    grid-column: span #{$i} !important;
+    grid-column: span #{$i};
     grid-row: span 12;
   }
 
   .row-sm-#{$i} {
-    grid-row: span #{$i} !important;
+    grid-row: span #{$i};
     grid-column: span 12;
   }
 }
@@ -124,12 +130,12 @@ $break-large: 1024px;
   //   columns col-md-{}
   @for $i from 1 through 12 {
     .col-md-#{$i} {
-      grid-column: span #{$i} !important;
+      grid-column: span #{$i};
       grid-row: span 12;
     }
 
     .row-md-#{$i} {
-      grid-row: span #{$i} !important;
+      grid-row: span #{$i};
       grid-column: span 12;
     }
   }
@@ -138,12 +144,12 @@ $break-large: 1024px;
   @for $i from 1 through 12 {
     @for $j from 1 through 12 {
       .col-md-#{$i}-#{$j} {
-        grid-column: #{$i}/span #{$j} !important;
+        grid-column: #{$i}/span #{$j};
         grid-row: span 12;
       }
 
       .row-md-#{$i}-#{$j} {
-        grid-row: #{$i}/span #{$j} !important;
+        grid-row: #{$i}/span #{$j};
         grid-column: span 12;
       }
     }
@@ -164,12 +170,12 @@ $break-large: 1024px;
   //   columns col-lg-{}
   @for $i from 1 through 12 {
     .col-lg-#{$i} {
-      grid-column: span #{$i} !important;
+      grid-column: span #{$i};
       grid-row: span 12;
     }
 
     .row-lg-#{$i} {
-      grid-row: span #{$i} !important;
+      grid-row: span #{$i};
       grid-column: span 12;
     }
   }
@@ -178,12 +184,12 @@ $break-large: 1024px;
   @for $i from 1 through 12 {
     @for $j from 1 through 12 {
       .col-lg-#{$i}-#{$j} {
-        grid-column: #{$i}/span #{$j} !important;
+        grid-column: #{$i}/span #{$j};
         grid-row: span 12;
       }
 
       .row-lg-#{$i}-#{$j} {
-        grid-row: #{$i}/span #{$j} !important;
+        grid-row: #{$i}/span #{$j};
         grid-column: span 12;
       }
     }

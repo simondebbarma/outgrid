@@ -1,4 +1,3 @@
-@use 'colors';
 /* ----------  Start  ---------- */
 .ais {
   align-items: start; }
@@ -534,11 +533,58 @@
 .ml-n5 {
   margin-left: -2.5rem; }
 
+.image-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover; }
+
+.image-cover-center {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center; }
+
+.image-cover-left {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: left; }
+
+.image-cover-right {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: right; }
+
+.image-cover-center-top {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: top; }
+
+.image-cover-bottom {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom; }
+
+.image-span {
+  grid-column: 1/-1;
+  height: 100%;
+  object-fit: cover; }
+
 /* ----------  Container  ---------- */
 .d-grid {
   display: grid; }
 
 .container {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr); }
+
+.container-auto-rows {
   display: grid;
   width: 100%;
   height: 100%;
@@ -790,7 +836,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -818,7 +863,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -846,7 +890,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -874,7 +917,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -902,7 +944,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -930,7 +971,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -958,7 +998,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -986,7 +1025,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -1014,7 +1052,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -1042,7 +1079,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -1070,7 +1106,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -1098,7 +1133,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -1126,7 +1160,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -1154,7 +1187,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -1182,7 +1214,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -1210,7 +1241,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -1238,7 +1268,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -1266,7 +1295,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -1294,7 +1322,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -1322,7 +1349,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -1350,7 +1376,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -1378,7 +1403,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -1406,7 +1430,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -1434,7 +1457,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -1462,7 +1484,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -1490,7 +1511,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -1518,7 +1538,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -1546,7 +1565,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -1574,7 +1592,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -1602,7 +1619,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -1630,7 +1646,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -1658,7 +1673,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -1686,7 +1700,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -1714,7 +1727,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -1742,7 +1754,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -1770,7 +1781,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -1798,7 +1808,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -1826,7 +1835,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -1854,7 +1862,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -1882,7 +1889,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -1910,7 +1916,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -1938,7 +1943,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -1966,7 +1970,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -1994,7 +1997,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -2022,7 +2024,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -2050,7 +2051,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -2078,7 +2078,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -2106,7 +2105,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -2134,7 +2132,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -2162,7 +2159,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -2190,7 +2186,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -2218,7 +2213,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -2246,7 +2240,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -2274,7 +2267,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -2302,7 +2294,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -2330,7 +2321,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -2358,7 +2348,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -2386,7 +2375,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -2414,7 +2402,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -2442,7 +2429,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -2470,7 +2456,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -2498,7 +2483,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -2526,7 +2510,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -2554,7 +2537,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -2582,7 +2564,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -2610,7 +2591,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -2638,7 +2618,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -2666,7 +2645,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -2694,7 +2672,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -2722,7 +2699,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -2750,7 +2726,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -2778,7 +2753,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -2806,7 +2780,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -2834,7 +2807,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -2862,7 +2834,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -2890,7 +2861,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -2918,7 +2888,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -2946,7 +2915,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -2974,7 +2942,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -3002,7 +2969,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -3030,7 +2996,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -3058,7 +3023,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -3086,7 +3050,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -3114,7 +3077,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(7, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -3142,7 +3104,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -3170,7 +3131,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -3198,7 +3158,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -3226,7 +3185,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -3254,7 +3212,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -3282,7 +3239,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -3310,7 +3266,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -3338,7 +3293,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -3366,7 +3320,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -3394,7 +3347,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -3422,7 +3374,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -3450,7 +3401,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(8, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -3478,7 +3428,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -3506,7 +3455,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -3534,7 +3482,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -3562,7 +3509,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -3590,7 +3536,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -3618,7 +3563,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -3646,7 +3590,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -3674,7 +3617,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -3702,7 +3644,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -3730,7 +3671,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -3758,7 +3698,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -3786,7 +3725,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(9, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -3814,7 +3752,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -3842,7 +3779,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -3870,7 +3806,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -3898,7 +3833,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -3926,7 +3860,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -3954,7 +3887,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -3982,7 +3914,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -4010,7 +3941,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -4038,7 +3968,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -4066,7 +3995,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -4094,7 +4022,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -4122,7 +4049,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(10, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -4150,7 +4076,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -4178,7 +4103,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -4206,7 +4130,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -4234,7 +4157,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -4262,7 +4184,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -4290,7 +4211,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -4318,7 +4238,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -4346,7 +4265,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -4374,7 +4292,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -4402,7 +4319,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -4430,7 +4346,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -4458,7 +4373,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(11, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -4486,7 +4400,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(1, 1fr); }
 
@@ -4514,7 +4427,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(2, 1fr); }
 
@@ -4542,7 +4454,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(3, 1fr); }
 
@@ -4570,7 +4481,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(4, 1fr); }
 
@@ -4598,7 +4508,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(5, 1fr); }
 
@@ -4626,7 +4535,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(6, 1fr); }
 
@@ -4654,7 +4562,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(7, 1fr); }
 
@@ -4682,7 +4589,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(8, 1fr); }
 
@@ -4710,7 +4616,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(9, 1fr); }
 
@@ -4738,7 +4643,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(10, 1fr); }
 
@@ -4766,7 +4670,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(11, 1fr); }
 
@@ -4794,7 +4697,6 @@
   display: grid;
   width: 100%;
   height: 100%;
-  grid-auto-rows: auto;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
@@ -4820,195 +4722,195 @@
 
 /* ----------  Default Columns and Rows ---------- */
 .col-1 {
-  grid-column: span 1 !important;
+  grid-column: span 1;
   grid-row: span 12; }
 
 .row-1 {
-  grid-row: span 1 !important;
+  grid-row: 1;
   grid-column: span 12; }
 
 .col-sm-1 {
-  grid-column: span 1 !important;
+  grid-column: span 1;
   grid-row: span 12; }
 
 .row-sm-1 {
-  grid-row: span 1 !important;
+  grid-row: span 1;
   grid-column: span 12; }
 
 .col-2 {
-  grid-column: span 2 !important;
+  grid-column: span 2;
   grid-row: span 12; }
 
 .row-2 {
-  grid-row: span 2 !important;
+  grid-row: 2;
   grid-column: span 12; }
 
 .col-sm-2 {
-  grid-column: span 2 !important;
+  grid-column: span 2;
   grid-row: span 12; }
 
 .row-sm-2 {
-  grid-row: span 2 !important;
+  grid-row: span 2;
   grid-column: span 12; }
 
 .col-3 {
-  grid-column: span 3 !important;
+  grid-column: span 3;
   grid-row: span 12; }
 
 .row-3 {
-  grid-row: span 3 !important;
+  grid-row: 3;
   grid-column: span 12; }
 
 .col-sm-3 {
-  grid-column: span 3 !important;
+  grid-column: span 3;
   grid-row: span 12; }
 
 .row-sm-3 {
-  grid-row: span 3 !important;
+  grid-row: span 3;
   grid-column: span 12; }
 
 .col-4 {
-  grid-column: span 4 !important;
+  grid-column: span 4;
   grid-row: span 12; }
 
 .row-4 {
-  grid-row: span 4 !important;
+  grid-row: 4;
   grid-column: span 12; }
 
 .col-sm-4 {
-  grid-column: span 4 !important;
+  grid-column: span 4;
   grid-row: span 12; }
 
 .row-sm-4 {
-  grid-row: span 4 !important;
+  grid-row: span 4;
   grid-column: span 12; }
 
 .col-5 {
-  grid-column: span 5 !important;
+  grid-column: span 5;
   grid-row: span 12; }
 
 .row-5 {
-  grid-row: span 5 !important;
+  grid-row: 5;
   grid-column: span 12; }
 
 .col-sm-5 {
-  grid-column: span 5 !important;
+  grid-column: span 5;
   grid-row: span 12; }
 
 .row-sm-5 {
-  grid-row: span 5 !important;
+  grid-row: span 5;
   grid-column: span 12; }
 
 .col-6 {
-  grid-column: span 6 !important;
+  grid-column: span 6;
   grid-row: span 12; }
 
 .row-6 {
-  grid-row: span 6 !important;
+  grid-row: 6;
   grid-column: span 12; }
 
 .col-sm-6 {
-  grid-column: span 6 !important;
+  grid-column: span 6;
   grid-row: span 12; }
 
 .row-sm-6 {
-  grid-row: span 6 !important;
+  grid-row: span 6;
   grid-column: span 12; }
 
 .col-7 {
-  grid-column: span 7 !important;
+  grid-column: span 7;
   grid-row: span 12; }
 
 .row-7 {
-  grid-row: span 7 !important;
+  grid-row: 7;
   grid-column: span 12; }
 
 .col-sm-7 {
-  grid-column: span 7 !important;
+  grid-column: span 7;
   grid-row: span 12; }
 
 .row-sm-7 {
-  grid-row: span 7 !important;
+  grid-row: span 7;
   grid-column: span 12; }
 
 .col-8 {
-  grid-column: span 8 !important;
+  grid-column: span 8;
   grid-row: span 12; }
 
 .row-8 {
-  grid-row: span 8 !important;
+  grid-row: 8;
   grid-column: span 12; }
 
 .col-sm-8 {
-  grid-column: span 8 !important;
+  grid-column: span 8;
   grid-row: span 12; }
 
 .row-sm-8 {
-  grid-row: span 8 !important;
+  grid-row: span 8;
   grid-column: span 12; }
 
 .col-9 {
-  grid-column: span 9 !important;
+  grid-column: span 9;
   grid-row: span 12; }
 
 .row-9 {
-  grid-row: span 9 !important;
+  grid-row: 9;
   grid-column: span 12; }
 
 .col-sm-9 {
-  grid-column: span 9 !important;
+  grid-column: span 9;
   grid-row: span 12; }
 
 .row-sm-9 {
-  grid-row: span 9 !important;
+  grid-row: span 9;
   grid-column: span 12; }
 
 .col-10 {
-  grid-column: span 10 !important;
+  grid-column: span 10;
   grid-row: span 12; }
 
 .row-10 {
-  grid-row: span 10 !important;
+  grid-row: 10;
   grid-column: span 12; }
 
 .col-sm-10 {
-  grid-column: span 10 !important;
+  grid-column: span 10;
   grid-row: span 12; }
 
 .row-sm-10 {
-  grid-row: span 10 !important;
+  grid-row: span 10;
   grid-column: span 12; }
 
 .col-11 {
-  grid-column: span 11 !important;
+  grid-column: span 11;
   grid-row: span 12; }
 
 .row-11 {
-  grid-row: span 11 !important;
+  grid-row: 11;
   grid-column: span 12; }
 
 .col-sm-11 {
-  grid-column: span 11 !important;
+  grid-column: span 11;
   grid-row: span 12; }
 
 .row-sm-11 {
-  grid-row: span 11 !important;
+  grid-row: span 11;
   grid-column: span 12; }
 
 .col-12 {
-  grid-column: span 12 !important;
+  grid-column: span 12;
   grid-row: span 12; }
 
 .row-12 {
-  grid-row: span 12 !important;
+  grid-row: 12;
   grid-column: span 12; }
 
 .col-sm-12 {
-  grid-column: span 12 !important;
+  grid-column: span 12;
   grid-row: span 12; }
 
 .row-sm-12 {
-  grid-row: span 12 !important;
+  grid-row: span 12;
   grid-column: span 12; }
 
 /* ----------  Media Queries  ---------- */
