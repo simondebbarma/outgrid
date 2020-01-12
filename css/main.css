@@ -45,6 +45,30 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.heading1 {
+  font-size: 4rem;
+  font-weight: 700; }
+
+.heading2 {
+  font-size: 3.5rem;
+  font-weight: 700; }
+
+.heading3 {
+  font-size: 3rem;
+  font-weight: 700; }
+
+.heading4 {
+  font-size: 2.55rem;
+  font-weight: 700; }
+
+.heading5 {
+  font-size: 2rem;
+  font-weight: 700; }
+
+.heading6 {
+  font-size: 1.5rem;
+  font-weight: 700; }
+
 /* ----------  Start  ---------- */
 .ais {
   align-items: start; }
@@ -646,7 +670,7 @@ table {
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 1fr); }
 
-.auto-rows {
+.aut {
   grid-auto-rows: auto; }
 
 .container-autofit-50 {
