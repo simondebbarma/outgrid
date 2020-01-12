@@ -73,7 +73,7 @@ $break-large: 1024px;
 }
 // #endregion autofit & autofill
 
-// #region containers/areas/col/row combinations {x}-{y} by 12
+// #region containers/areas/columns/rows combinations {x}-{y} by 12
 @for $i from 1 through 12 {
   @for $j from 1 through 12 {
     .container-#{$i}-#{$j} {
@@ -107,7 +107,6 @@ $break-large: 1024px;
       grid-row: auto / span #{$j};
     }
 
-    // #region col/row {start}-{end}
     .col-#{$i}-#{$j} {
       grid-column-start: #{$i};
       grid-column-end: #{$j};
@@ -127,7 +126,6 @@ $break-large: 1024px;
       grid-row-start: #{$i};
       grid-row-end: #{$j};
     }
-    // #endregion col/row {start}-{end}
   }
 }
 // #endregion containers/areas/col/row combinations {x}-{y} by 12
@@ -249,7 +247,6 @@ $break-large: 1024px;
         grid-template-rows: repeat(#{$j}, 1fr);
       }
 
-      // #region col/row -md-{start}-{end}
       .col-md-#{$i}-#{$j} {
         grid-column-start: #{$i};
         grid-column-end: #{$j};
@@ -259,7 +256,6 @@ $break-large: 1024px;
         grid-row-start: #{$i};
         grid-row-end: #{$j};
       }
-      // #endregion col/row -md-{start}-{end}
     }
   }
 }
@@ -325,7 +321,6 @@ $break-large: 1024px;
         grid-template-rows: repeat(#{$j}, 1fr);
       }
 
-      // #region col/row -lg-{start}-{end}
       .col-lg-#{$i}-#{$j} {
         grid-column-start: #{$i};
         grid-column-end: #{$j};
@@ -335,7 +330,6 @@ $break-large: 1024px;
         grid-row-start: #{$i};
         grid-row-end: #{$j};
       }
-      // #endregion col/row -lg-{start}-{end}
     }
   }
 }
