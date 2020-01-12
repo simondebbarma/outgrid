@@ -14,7 +14,7 @@ gulp.task('prefixer', () => {
         .pipe(autoprefixer({
             cascade: false
         }).on('error', sass.logError))
-        .pipe(gulp.dest('./css/main-test.css'));
+        .pipe(gulp.dest('./css/prefixers'));
 });
 
 gulp.task('clean', () => {
