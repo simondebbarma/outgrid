@@ -103,3 +103,14 @@ $spacing: 0.5;
     margin-left: -$i*$spacing*1rem;
   }
 }
+
+
+@for $i from 0 through 250 {
+  .h#{$i} {
+    height: #{$i}px;
+  }
+
+  .w#{$i} {
+    width: #{$i}px;
+  }
+}

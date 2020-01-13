@@ -28,7 +28,7 @@ $break-large: 1024px;
 }
 
 .blog-aside-left {
-    grid-area: blog-aside-left
+    grid-area: blog-aside-left;
 }
 
 @media screen and (min-width: $break-medium) {
