@@ -1,11 +1,12 @@
 @import "reset";
 @import "color";
 @import "text";
-@import "components/button";
+@import "./components/button";
 @import "align";
-@import "spacing";
 @import "media";
+@import "./components/navbar";
 @import "./layouts/blog";
+@import "spacing";
 
 $break-medium: 720px;
 $break-large: 1024px;
