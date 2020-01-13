@@ -1,0 +1,28 @@
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.white-link {
+    color: white;
+    background-color: #3cb46e;
+}
+
+.white-link:hover {
+    background-color: #37a866 ;
+}
+
+.nav-test {
+    grid-template-columns: auto 1fr repeat(6, auto);
+}
+
+.logo {
+    grid-template-columns: auto 1fr;
+}
+
+.color-gray {
+    color: gray;
+}
+
+.hover-black:hover {
+    color: black;
+}

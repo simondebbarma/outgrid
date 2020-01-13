@@ -26,6 +26,7 @@
 .hover-underline {
     @extend .no-decoration;
     &:hover {
+        color: inherit;
         @extend .underline;
     }
 }
