@@ -45,6 +45,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+.background-green {
+  background-color: #1cec00; }
+
+@use "color";
 html {
   font-size: 16px; }
   @media screen and (min-width: 720px) {
@@ -83,6 +87,22 @@ html {
 
 .text-capitalize {
   text-transform: capitalize; }
+
+.text-white {
+  color: #f0f0f0; }
+
+.text-black {
+  color: black; }
+
+@use '../color';
+@use '../text';
+.btn {
+  padding: 10px;
+  border-radius: 5px;
+  text-decoration: none; }
+
+.border {
+  border: 1px solid #ddd; }
 
 /* ----------  Start  ---------- */
 .ais {
@@ -666,7 +686,7 @@ html {
 .blog {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "blog-content" "blog-aside-left" "blog-aside-right"; }
+  grid-template-areas: "blog-content" "blog-aside-left" "blog-aside-right"; }
 
 .blog-content {
   grid-area: blog-content; }

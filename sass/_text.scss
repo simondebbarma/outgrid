@@ -1,3 +1,5 @@
+@use "color";
+
 @function strip-unit($value) {
     @return $value / ($value * 0 + 1);
   }
@@ -66,4 +68,12 @@ html {
   
 .text-capitalize {
     text-transform: capitalize;
+}
+
+.text-white {
+  color: $og-white;
+}
+
+.text-black {
+  color: black;
 }

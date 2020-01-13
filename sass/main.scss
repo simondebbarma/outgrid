@@ -1,9 +1,10 @@
 @import "reset";
+@import "color";
 @import "text";
+@import "components/button";
 @import "align";
 @import "spacing";
 @import "media";
-@import "color";
 @import "./layouts/blog";
 
 $break-medium: 720px;
