@@ -8,11 +8,32 @@ html {
 
 .hero-image {
     height: 542px;
-    background: url(https://source.unsplash.com/collection/531563/1920x1080) no-repeat center;
+    background: url(https://source.unsplash.com/random/1920x1080/?climbing,f1,basketball,gaming) no-repeat center;
 }
 
 .overflow-hidden {
     overflow: hidden;
+}
+
+.overlay-greydient {
+    grid-template-rows: 1fr 30px;
+}
+
+.hero-text-container {
+    max-width: 864px;
+    grid-template-rows: 1fr 70px 80px 1fr;
+}
+
+.stuff {
+    font-size: 0.75rem;
+}
+
+.stuff > a {
+    color: white;
+}
+
+.hero-search {
+    width: 80%;
 }
 
 .white-link {
