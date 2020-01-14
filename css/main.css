@@ -721,6 +721,18 @@ a {
   .blog-aside-left {
     grid-area: blog-aside-right; } }
 
+@use 'layouts/grid';
+.m-auto {
+  margin: auto; }
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto; }
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto; }
+
 .gg-0 {
   gap: 0rem; }
 
@@ -2695,8 +2707,31 @@ a {
 .w250 {
   width: 250px; }
 
+@media screen and (min-width: 720px) {
+  .m-md-auto {
+    margin: auto; }
+  .mx-md-auto {
+    margin-left: auto;
+    margin-right: auto; }
+  .my-md-auto {
+    margin-top: auto;
+    margin-bottom: auto; } }
+
+@media screen and (min-width: 1024px) {
+  .m-lg-auto {
+    margin: auto; }
+  .mx-lg-auto {
+    margin-left: auto;
+    margin-right: auto; }
+  .my-lg-auto {
+    margin-top: auto;
+    margin-bottom: auto; } }
+
 /* ----------  Container  ---------- */
 .d-grid {
+  display: grid; }
+
+.d-sm-grid {
   display: grid; }
 
 .container {
@@ -11605,6 +11640,8 @@ a {
   grid-row-end: 12; }
 
 @media screen and (min-width: 768px) {
+  .d-md-grid {
+    display: grid; }
   .autofit-md-5 {
     grid-template-columns: repeat(auto-fit, minmax(5px, 1fr)); }
   .autofill-md-5 {
@@ -12555,6 +12592,7 @@ a {
   .container-md-1-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-1-1 {
@@ -12569,6 +12607,7 @@ a {
   .container-md-1-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-1-2 {
@@ -12583,6 +12622,7 @@ a {
   .container-md-1-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-1-3 {
@@ -12597,6 +12637,7 @@ a {
   .container-md-1-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-1-4 {
@@ -12611,6 +12652,7 @@ a {
   .container-md-1-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-1-5 {
@@ -12625,6 +12667,7 @@ a {
   .container-md-1-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-1-6 {
@@ -12639,6 +12682,7 @@ a {
   .container-md-1-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-1-7 {
@@ -12653,6 +12697,7 @@ a {
   .container-md-1-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-1-8 {
@@ -12667,6 +12712,7 @@ a {
   .container-md-1-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-1-9 {
@@ -12681,6 +12727,7 @@ a {
   .container-md-1-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-1-10 {
@@ -12695,6 +12742,7 @@ a {
   .container-md-1-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-1-11 {
@@ -12709,6 +12757,7 @@ a {
   .container-md-1-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-1-12 {
@@ -12723,6 +12772,7 @@ a {
   .container-md-2-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-2-1 {
@@ -12737,6 +12787,7 @@ a {
   .container-md-2-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-2-2 {
@@ -12751,6 +12802,7 @@ a {
   .container-md-2-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-2-3 {
@@ -12765,6 +12817,7 @@ a {
   .container-md-2-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-2-4 {
@@ -12779,6 +12832,7 @@ a {
   .container-md-2-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-2-5 {
@@ -12793,6 +12847,7 @@ a {
   .container-md-2-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-2-6 {
@@ -12807,6 +12862,7 @@ a {
   .container-md-2-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-2-7 {
@@ -12821,6 +12877,7 @@ a {
   .container-md-2-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-2-8 {
@@ -12835,6 +12892,7 @@ a {
   .container-md-2-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-2-9 {
@@ -12849,6 +12907,7 @@ a {
   .container-md-2-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-2-10 {
@@ -12863,6 +12922,7 @@ a {
   .container-md-2-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-2-11 {
@@ -12877,6 +12937,7 @@ a {
   .container-md-2-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-2-12 {
@@ -12891,6 +12952,7 @@ a {
   .container-md-3-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-3-1 {
@@ -12905,6 +12967,7 @@ a {
   .container-md-3-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-3-2 {
@@ -12919,6 +12982,7 @@ a {
   .container-md-3-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-3-3 {
@@ -12933,6 +12997,7 @@ a {
   .container-md-3-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-3-4 {
@@ -12947,6 +13012,7 @@ a {
   .container-md-3-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-3-5 {
@@ -12961,6 +13027,7 @@ a {
   .container-md-3-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-3-6 {
@@ -12975,6 +13042,7 @@ a {
   .container-md-3-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-3-7 {
@@ -12989,6 +13057,7 @@ a {
   .container-md-3-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-3-8 {
@@ -13003,6 +13072,7 @@ a {
   .container-md-3-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-3-9 {
@@ -13017,6 +13087,7 @@ a {
   .container-md-3-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-3-10 {
@@ -13031,6 +13102,7 @@ a {
   .container-md-3-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-3-11 {
@@ -13045,6 +13117,7 @@ a {
   .container-md-3-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-3-12 {
@@ -13059,6 +13132,7 @@ a {
   .container-md-4-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-4-1 {
@@ -13073,6 +13147,7 @@ a {
   .container-md-4-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-4-2 {
@@ -13087,6 +13162,7 @@ a {
   .container-md-4-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-4-3 {
@@ -13101,6 +13177,7 @@ a {
   .container-md-4-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-4-4 {
@@ -13115,6 +13192,7 @@ a {
   .container-md-4-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-4-5 {
@@ -13129,6 +13207,7 @@ a {
   .container-md-4-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-4-6 {
@@ -13143,6 +13222,7 @@ a {
   .container-md-4-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-4-7 {
@@ -13157,6 +13237,7 @@ a {
   .container-md-4-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-4-8 {
@@ -13171,6 +13252,7 @@ a {
   .container-md-4-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-4-9 {
@@ -13185,6 +13267,7 @@ a {
   .container-md-4-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-4-10 {
@@ -13199,6 +13282,7 @@ a {
   .container-md-4-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-4-11 {
@@ -13213,6 +13297,7 @@ a {
   .container-md-4-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-4-12 {
@@ -13227,6 +13312,7 @@ a {
   .container-md-5-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-5-1 {
@@ -13241,6 +13327,7 @@ a {
   .container-md-5-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-5-2 {
@@ -13255,6 +13342,7 @@ a {
   .container-md-5-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-5-3 {
@@ -13269,6 +13357,7 @@ a {
   .container-md-5-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-5-4 {
@@ -13283,6 +13372,7 @@ a {
   .container-md-5-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-5-5 {
@@ -13297,6 +13387,7 @@ a {
   .container-md-5-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-5-6 {
@@ -13311,6 +13402,7 @@ a {
   .container-md-5-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-5-7 {
@@ -13325,6 +13417,7 @@ a {
   .container-md-5-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-5-8 {
@@ -13339,6 +13432,7 @@ a {
   .container-md-5-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-5-9 {
@@ -13353,6 +13447,7 @@ a {
   .container-md-5-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-5-10 {
@@ -13367,6 +13462,7 @@ a {
   .container-md-5-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-5-11 {
@@ -13381,6 +13477,7 @@ a {
   .container-md-5-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-5-12 {
@@ -13395,6 +13492,7 @@ a {
   .container-md-6-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-6-1 {
@@ -13409,6 +13507,7 @@ a {
   .container-md-6-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-6-2 {
@@ -13423,6 +13522,7 @@ a {
   .container-md-6-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-6-3 {
@@ -13437,6 +13537,7 @@ a {
   .container-md-6-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-6-4 {
@@ -13451,6 +13552,7 @@ a {
   .container-md-6-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-6-5 {
@@ -13465,6 +13567,7 @@ a {
   .container-md-6-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-6-6 {
@@ -13479,6 +13582,7 @@ a {
   .container-md-6-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-6-7 {
@@ -13493,6 +13597,7 @@ a {
   .container-md-6-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-6-8 {
@@ -13507,6 +13612,7 @@ a {
   .container-md-6-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-6-9 {
@@ -13521,6 +13627,7 @@ a {
   .container-md-6-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-6-10 {
@@ -13535,6 +13642,7 @@ a {
   .container-md-6-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-6-11 {
@@ -13549,6 +13657,7 @@ a {
   .container-md-6-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-6-12 {
@@ -13563,6 +13672,7 @@ a {
   .container-md-7-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-7-1 {
@@ -13577,6 +13687,7 @@ a {
   .container-md-7-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-7-2 {
@@ -13591,6 +13702,7 @@ a {
   .container-md-7-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-7-3 {
@@ -13605,6 +13717,7 @@ a {
   .container-md-7-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-7-4 {
@@ -13619,6 +13732,7 @@ a {
   .container-md-7-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-7-5 {
@@ -13633,6 +13747,7 @@ a {
   .container-md-7-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-7-6 {
@@ -13647,6 +13762,7 @@ a {
   .container-md-7-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-7-7 {
@@ -13661,6 +13777,7 @@ a {
   .container-md-7-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-7-8 {
@@ -13675,6 +13792,7 @@ a {
   .container-md-7-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-7-9 {
@@ -13689,6 +13807,7 @@ a {
   .container-md-7-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-7-10 {
@@ -13703,6 +13822,7 @@ a {
   .container-md-7-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-7-11 {
@@ -13717,6 +13837,7 @@ a {
   .container-md-7-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-7-12 {
@@ -13731,6 +13852,7 @@ a {
   .container-md-8-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-8-1 {
@@ -13745,6 +13867,7 @@ a {
   .container-md-8-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-8-2 {
@@ -13759,6 +13882,7 @@ a {
   .container-md-8-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-8-3 {
@@ -13773,6 +13897,7 @@ a {
   .container-md-8-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-8-4 {
@@ -13787,6 +13912,7 @@ a {
   .container-md-8-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-8-5 {
@@ -13801,6 +13927,7 @@ a {
   .container-md-8-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-8-6 {
@@ -13815,6 +13942,7 @@ a {
   .container-md-8-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-8-7 {
@@ -13829,6 +13957,7 @@ a {
   .container-md-8-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-8-8 {
@@ -13843,6 +13972,7 @@ a {
   .container-md-8-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-8-9 {
@@ -13857,6 +13987,7 @@ a {
   .container-md-8-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-8-10 {
@@ -13871,6 +14002,7 @@ a {
   .container-md-8-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-8-11 {
@@ -13885,6 +14017,7 @@ a {
   .container-md-8-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-8-12 {
@@ -13899,6 +14032,7 @@ a {
   .container-md-9-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-9-1 {
@@ -13913,6 +14047,7 @@ a {
   .container-md-9-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-9-2 {
@@ -13927,6 +14062,7 @@ a {
   .container-md-9-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-9-3 {
@@ -13941,6 +14077,7 @@ a {
   .container-md-9-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-9-4 {
@@ -13955,6 +14092,7 @@ a {
   .container-md-9-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-9-5 {
@@ -13969,6 +14107,7 @@ a {
   .container-md-9-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-9-6 {
@@ -13983,6 +14122,7 @@ a {
   .container-md-9-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-9-7 {
@@ -13997,6 +14137,7 @@ a {
   .container-md-9-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-9-8 {
@@ -14011,6 +14152,7 @@ a {
   .container-md-9-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-9-9 {
@@ -14025,6 +14167,7 @@ a {
   .container-md-9-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-9-10 {
@@ -14039,6 +14182,7 @@ a {
   .container-md-9-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-9-11 {
@@ -14053,6 +14197,7 @@ a {
   .container-md-9-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-9-12 {
@@ -14067,6 +14212,7 @@ a {
   .container-md-10-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-10-1 {
@@ -14081,6 +14227,7 @@ a {
   .container-md-10-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-10-2 {
@@ -14095,6 +14242,7 @@ a {
   .container-md-10-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-10-3 {
@@ -14109,6 +14257,7 @@ a {
   .container-md-10-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-10-4 {
@@ -14123,6 +14272,7 @@ a {
   .container-md-10-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-10-5 {
@@ -14137,6 +14287,7 @@ a {
   .container-md-10-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-10-6 {
@@ -14151,6 +14302,7 @@ a {
   .container-md-10-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-10-7 {
@@ -14165,6 +14317,7 @@ a {
   .container-md-10-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-10-8 {
@@ -14179,6 +14332,7 @@ a {
   .container-md-10-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-10-9 {
@@ -14193,6 +14347,7 @@ a {
   .container-md-10-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-10-10 {
@@ -14207,6 +14362,7 @@ a {
   .container-md-10-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-10-11 {
@@ -14221,6 +14377,7 @@ a {
   .container-md-10-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-10-12 {
@@ -14235,6 +14392,7 @@ a {
   .container-md-11-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-11-1 {
@@ -14249,6 +14407,7 @@ a {
   .container-md-11-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-11-2 {
@@ -14263,6 +14422,7 @@ a {
   .container-md-11-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-11-3 {
@@ -14277,6 +14437,7 @@ a {
   .container-md-11-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-11-4 {
@@ -14291,6 +14452,7 @@ a {
   .container-md-11-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-11-5 {
@@ -14305,6 +14467,7 @@ a {
   .container-md-11-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-11-6 {
@@ -14319,6 +14482,7 @@ a {
   .container-md-11-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-11-7 {
@@ -14333,6 +14497,7 @@ a {
   .container-md-11-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-11-8 {
@@ -14347,6 +14512,7 @@ a {
   .container-md-11-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-11-9 {
@@ -14361,6 +14527,7 @@ a {
   .container-md-11-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-11-10 {
@@ -14375,6 +14542,7 @@ a {
   .container-md-11-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-11-11 {
@@ -14389,6 +14557,7 @@ a {
   .container-md-11-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-11-12 {
@@ -14403,6 +14572,7 @@ a {
   .container-md-12-1 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-md-12-1 {
@@ -14417,6 +14587,7 @@ a {
   .container-md-12-2 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-md-12-2 {
@@ -14431,6 +14602,7 @@ a {
   .container-md-12-3 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-md-12-3 {
@@ -14445,6 +14617,7 @@ a {
   .container-md-12-4 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-md-12-4 {
@@ -14459,6 +14632,7 @@ a {
   .container-md-12-5 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-md-12-5 {
@@ -14473,6 +14647,7 @@ a {
   .container-md-12-6 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-md-12-6 {
@@ -14487,6 +14662,7 @@ a {
   .container-md-12-7 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-md-12-7 {
@@ -14501,6 +14677,7 @@ a {
   .container-md-12-8 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-md-12-8 {
@@ -14515,6 +14692,7 @@ a {
   .container-md-12-9 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-md-12-9 {
@@ -14529,6 +14707,7 @@ a {
   .container-md-12-10 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-md-12-10 {
@@ -14543,6 +14722,7 @@ a {
   .container-md-12-11 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-md-12-11 {
@@ -14557,6 +14737,7 @@ a {
   .container-md-12-12 {
     display: grid;
     height: 100%;
+    max-width: 720px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-md-12-12 {
@@ -14567,6 +14748,8 @@ a {
     grid-row-end: 12; } }
 
 @media screen and (min-width: 1200px) {
+  .d-lg-grid {
+    display: grid; }
   .autofit-lg-5 {
     grid-template-columns: repeat(auto-fit, minmax(5px, 1fr)); }
   .autofill-lg-5 {
@@ -15517,6 +15700,7 @@ a {
   .container-lg-1-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-1-1 {
@@ -15531,6 +15715,7 @@ a {
   .container-lg-1-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-1-2 {
@@ -15545,6 +15730,7 @@ a {
   .container-lg-1-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-1-3 {
@@ -15559,6 +15745,7 @@ a {
   .container-lg-1-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-1-4 {
@@ -15573,6 +15760,7 @@ a {
   .container-lg-1-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-1-5 {
@@ -15587,6 +15775,7 @@ a {
   .container-lg-1-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-1-6 {
@@ -15601,6 +15790,7 @@ a {
   .container-lg-1-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-1-7 {
@@ -15615,6 +15805,7 @@ a {
   .container-lg-1-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-1-8 {
@@ -15629,6 +15820,7 @@ a {
   .container-lg-1-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-1-9 {
@@ -15643,6 +15835,7 @@ a {
   .container-lg-1-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-1-10 {
@@ -15657,6 +15850,7 @@ a {
   .container-lg-1-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-1-11 {
@@ -15671,6 +15865,7 @@ a {
   .container-lg-1-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-1-12 {
@@ -15685,6 +15880,7 @@ a {
   .container-lg-2-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-2-1 {
@@ -15699,6 +15895,7 @@ a {
   .container-lg-2-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-2-2 {
@@ -15713,6 +15910,7 @@ a {
   .container-lg-2-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-2-3 {
@@ -15727,6 +15925,7 @@ a {
   .container-lg-2-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-2-4 {
@@ -15741,6 +15940,7 @@ a {
   .container-lg-2-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-2-5 {
@@ -15755,6 +15955,7 @@ a {
   .container-lg-2-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-2-6 {
@@ -15769,6 +15970,7 @@ a {
   .container-lg-2-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-2-7 {
@@ -15783,6 +15985,7 @@ a {
   .container-lg-2-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-2-8 {
@@ -15797,6 +16000,7 @@ a {
   .container-lg-2-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-2-9 {
@@ -15811,6 +16015,7 @@ a {
   .container-lg-2-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-2-10 {
@@ -15825,6 +16030,7 @@ a {
   .container-lg-2-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-2-11 {
@@ -15839,6 +16045,7 @@ a {
   .container-lg-2-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-2-12 {
@@ -15853,6 +16060,7 @@ a {
   .container-lg-3-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-3-1 {
@@ -15867,6 +16075,7 @@ a {
   .container-lg-3-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-3-2 {
@@ -15881,6 +16090,7 @@ a {
   .container-lg-3-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-3-3 {
@@ -15895,6 +16105,7 @@ a {
   .container-lg-3-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-3-4 {
@@ -15909,6 +16120,7 @@ a {
   .container-lg-3-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-3-5 {
@@ -15923,6 +16135,7 @@ a {
   .container-lg-3-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-3-6 {
@@ -15937,6 +16150,7 @@ a {
   .container-lg-3-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-3-7 {
@@ -15951,6 +16165,7 @@ a {
   .container-lg-3-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-3-8 {
@@ -15965,6 +16180,7 @@ a {
   .container-lg-3-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-3-9 {
@@ -15979,6 +16195,7 @@ a {
   .container-lg-3-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-3-10 {
@@ -15993,6 +16210,7 @@ a {
   .container-lg-3-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-3-11 {
@@ -16007,6 +16225,7 @@ a {
   .container-lg-3-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-3-12 {
@@ -16021,6 +16240,7 @@ a {
   .container-lg-4-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-4-1 {
@@ -16035,6 +16255,7 @@ a {
   .container-lg-4-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-4-2 {
@@ -16049,6 +16270,7 @@ a {
   .container-lg-4-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-4-3 {
@@ -16063,6 +16285,7 @@ a {
   .container-lg-4-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-4-4 {
@@ -16077,6 +16300,7 @@ a {
   .container-lg-4-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-4-5 {
@@ -16091,6 +16315,7 @@ a {
   .container-lg-4-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-4-6 {
@@ -16105,6 +16330,7 @@ a {
   .container-lg-4-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-4-7 {
@@ -16119,6 +16345,7 @@ a {
   .container-lg-4-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-4-8 {
@@ -16133,6 +16360,7 @@ a {
   .container-lg-4-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-4-9 {
@@ -16147,6 +16375,7 @@ a {
   .container-lg-4-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-4-10 {
@@ -16161,6 +16390,7 @@ a {
   .container-lg-4-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-4-11 {
@@ -16175,6 +16405,7 @@ a {
   .container-lg-4-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-4-12 {
@@ -16189,6 +16420,7 @@ a {
   .container-lg-5-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-5-1 {
@@ -16203,6 +16435,7 @@ a {
   .container-lg-5-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-5-2 {
@@ -16217,6 +16450,7 @@ a {
   .container-lg-5-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-5-3 {
@@ -16231,6 +16465,7 @@ a {
   .container-lg-5-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-5-4 {
@@ -16245,6 +16480,7 @@ a {
   .container-lg-5-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-5-5 {
@@ -16259,6 +16495,7 @@ a {
   .container-lg-5-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-5-6 {
@@ -16273,6 +16510,7 @@ a {
   .container-lg-5-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-5-7 {
@@ -16287,6 +16525,7 @@ a {
   .container-lg-5-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-5-8 {
@@ -16301,6 +16540,7 @@ a {
   .container-lg-5-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-5-9 {
@@ -16315,6 +16555,7 @@ a {
   .container-lg-5-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-5-10 {
@@ -16329,6 +16570,7 @@ a {
   .container-lg-5-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-5-11 {
@@ -16343,6 +16585,7 @@ a {
   .container-lg-5-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-5-12 {
@@ -16357,6 +16600,7 @@ a {
   .container-lg-6-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-6-1 {
@@ -16371,6 +16615,7 @@ a {
   .container-lg-6-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-6-2 {
@@ -16385,6 +16630,7 @@ a {
   .container-lg-6-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-6-3 {
@@ -16399,6 +16645,7 @@ a {
   .container-lg-6-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-6-4 {
@@ -16413,6 +16660,7 @@ a {
   .container-lg-6-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-6-5 {
@@ -16427,6 +16675,7 @@ a {
   .container-lg-6-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-6-6 {
@@ -16441,6 +16690,7 @@ a {
   .container-lg-6-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-6-7 {
@@ -16455,6 +16705,7 @@ a {
   .container-lg-6-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-6-8 {
@@ -16469,6 +16720,7 @@ a {
   .container-lg-6-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-6-9 {
@@ -16483,6 +16735,7 @@ a {
   .container-lg-6-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-6-10 {
@@ -16497,6 +16750,7 @@ a {
   .container-lg-6-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-6-11 {
@@ -16511,6 +16765,7 @@ a {
   .container-lg-6-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-6-12 {
@@ -16525,6 +16780,7 @@ a {
   .container-lg-7-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-7-1 {
@@ -16539,6 +16795,7 @@ a {
   .container-lg-7-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-7-2 {
@@ -16553,6 +16810,7 @@ a {
   .container-lg-7-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-7-3 {
@@ -16567,6 +16825,7 @@ a {
   .container-lg-7-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-7-4 {
@@ -16581,6 +16840,7 @@ a {
   .container-lg-7-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-7-5 {
@@ -16595,6 +16855,7 @@ a {
   .container-lg-7-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-7-6 {
@@ -16609,6 +16870,7 @@ a {
   .container-lg-7-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-7-7 {
@@ -16623,6 +16885,7 @@ a {
   .container-lg-7-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-7-8 {
@@ -16637,6 +16900,7 @@ a {
   .container-lg-7-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-7-9 {
@@ -16651,6 +16915,7 @@ a {
   .container-lg-7-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-7-10 {
@@ -16665,6 +16930,7 @@ a {
   .container-lg-7-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-7-11 {
@@ -16679,6 +16945,7 @@ a {
   .container-lg-7-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-7-12 {
@@ -16693,6 +16960,7 @@ a {
   .container-lg-8-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-8-1 {
@@ -16707,6 +16975,7 @@ a {
   .container-lg-8-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-8-2 {
@@ -16721,6 +16990,7 @@ a {
   .container-lg-8-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-8-3 {
@@ -16735,6 +17005,7 @@ a {
   .container-lg-8-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-8-4 {
@@ -16749,6 +17020,7 @@ a {
   .container-lg-8-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-8-5 {
@@ -16763,6 +17035,7 @@ a {
   .container-lg-8-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-8-6 {
@@ -16777,6 +17050,7 @@ a {
   .container-lg-8-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-8-7 {
@@ -16791,6 +17065,7 @@ a {
   .container-lg-8-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-8-8 {
@@ -16805,6 +17080,7 @@ a {
   .container-lg-8-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-8-9 {
@@ -16819,6 +17095,7 @@ a {
   .container-lg-8-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-8-10 {
@@ -16833,6 +17110,7 @@ a {
   .container-lg-8-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-8-11 {
@@ -16847,6 +17125,7 @@ a {
   .container-lg-8-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-8-12 {
@@ -16861,6 +17140,7 @@ a {
   .container-lg-9-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-9-1 {
@@ -16875,6 +17155,7 @@ a {
   .container-lg-9-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-9-2 {
@@ -16889,6 +17170,7 @@ a {
   .container-lg-9-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-9-3 {
@@ -16903,6 +17185,7 @@ a {
   .container-lg-9-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-9-4 {
@@ -16917,6 +17200,7 @@ a {
   .container-lg-9-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-9-5 {
@@ -16931,6 +17215,7 @@ a {
   .container-lg-9-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-9-6 {
@@ -16945,6 +17230,7 @@ a {
   .container-lg-9-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-9-7 {
@@ -16959,6 +17245,7 @@ a {
   .container-lg-9-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-9-8 {
@@ -16973,6 +17260,7 @@ a {
   .container-lg-9-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-9-9 {
@@ -16987,6 +17275,7 @@ a {
   .container-lg-9-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-9-10 {
@@ -17001,6 +17290,7 @@ a {
   .container-lg-9-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-9-11 {
@@ -17015,6 +17305,7 @@ a {
   .container-lg-9-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(9, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-9-12 {
@@ -17029,6 +17320,7 @@ a {
   .container-lg-10-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-10-1 {
@@ -17043,6 +17335,7 @@ a {
   .container-lg-10-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-10-2 {
@@ -17057,6 +17350,7 @@ a {
   .container-lg-10-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-10-3 {
@@ -17071,6 +17365,7 @@ a {
   .container-lg-10-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-10-4 {
@@ -17085,6 +17380,7 @@ a {
   .container-lg-10-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-10-5 {
@@ -17099,6 +17395,7 @@ a {
   .container-lg-10-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-10-6 {
@@ -17113,6 +17410,7 @@ a {
   .container-lg-10-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-10-7 {
@@ -17127,6 +17425,7 @@ a {
   .container-lg-10-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-10-8 {
@@ -17141,6 +17440,7 @@ a {
   .container-lg-10-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-10-9 {
@@ -17155,6 +17455,7 @@ a {
   .container-lg-10-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-10-10 {
@@ -17169,6 +17470,7 @@ a {
   .container-lg-10-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-10-11 {
@@ -17183,6 +17485,7 @@ a {
   .container-lg-10-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-10-12 {
@@ -17197,6 +17500,7 @@ a {
   .container-lg-11-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-11-1 {
@@ -17211,6 +17515,7 @@ a {
   .container-lg-11-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-11-2 {
@@ -17225,6 +17530,7 @@ a {
   .container-lg-11-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-11-3 {
@@ -17239,6 +17545,7 @@ a {
   .container-lg-11-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-11-4 {
@@ -17253,6 +17560,7 @@ a {
   .container-lg-11-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-11-5 {
@@ -17267,6 +17575,7 @@ a {
   .container-lg-11-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-11-6 {
@@ -17281,6 +17590,7 @@ a {
   .container-lg-11-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-11-7 {
@@ -17295,6 +17605,7 @@ a {
   .container-lg-11-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-11-8 {
@@ -17309,6 +17620,7 @@ a {
   .container-lg-11-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-11-9 {
@@ -17323,6 +17635,7 @@ a {
   .container-lg-11-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-11-10 {
@@ -17337,6 +17650,7 @@ a {
   .container-lg-11-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-11-11 {
@@ -17351,6 +17665,7 @@ a {
   .container-lg-11-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-11-12 {
@@ -17365,6 +17680,7 @@ a {
   .container-lg-12-1 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(1, 1fr); }
   .col-lg-12-1 {
@@ -17379,6 +17695,7 @@ a {
   .container-lg-12-2 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr); }
   .col-lg-12-2 {
@@ -17393,6 +17710,7 @@ a {
   .container-lg-12-3 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr); }
   .col-lg-12-3 {
@@ -17407,6 +17725,7 @@ a {
   .container-lg-12-4 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(4, 1fr); }
   .col-lg-12-4 {
@@ -17421,6 +17740,7 @@ a {
   .container-lg-12-5 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(5, 1fr); }
   .col-lg-12-5 {
@@ -17435,6 +17755,7 @@ a {
   .container-lg-12-6 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(6, 1fr); }
   .col-lg-12-6 {
@@ -17449,6 +17770,7 @@ a {
   .container-lg-12-7 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(7, 1fr); }
   .col-lg-12-7 {
@@ -17463,6 +17785,7 @@ a {
   .container-lg-12-8 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(8, 1fr); }
   .col-lg-12-8 {
@@ -17477,6 +17800,7 @@ a {
   .container-lg-12-9 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(9, 1fr); }
   .col-lg-12-9 {
@@ -17491,6 +17815,7 @@ a {
   .container-lg-12-10 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(10, 1fr); }
   .col-lg-12-10 {
@@ -17505,6 +17830,7 @@ a {
   .container-lg-12-11 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(11, 1fr); }
   .col-lg-12-11 {
@@ -17519,6 +17845,7 @@ a {
   .container-lg-12-12 {
     display: grid;
     height: 100%;
+    max-width: 1144px;
     grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(12, 1fr); }
   .col-lg-12-12 {
