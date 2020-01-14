@@ -22,6 +22,7 @@ html {
 .hero-text-container {
     max-width: 864px;
     grid-template-rows: 1fr 70px 80px 1fr;
+    width: 100%;
 }
 
 .stuff {
@@ -44,8 +45,12 @@ html {
     background-color: #37a866 ;
 }
 
-.nav-test {
+.nav-md {
     grid-template-columns: auto auto 1fr repeat(6, auto);
+}
+
+.nav-sm {
+    display: none;
 }
 
 .logo {
@@ -89,7 +94,7 @@ html {
         display: none;
     }
 
-    .nav-test {
+    .nav-md {
         grid-template-columns: auto 1fr repeat(6, auto);
     }
 }
@@ -123,5 +128,13 @@ html {
 
     .hero-sub-left {
         width: 100%;
+    }
+
+    .nav-sm {
+        display: grid;
+    }
+
+    .nav-md {
+        display: none;
     }
 }
