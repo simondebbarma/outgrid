@@ -1,8 +1,8 @@
 
-/*----------  Border  ----------*/
+/* ----------  Border  ---------- */
 
 @for $i from 1 through 50 {
-    .bor-rad-#{$i} {
-        border-radius: #{$i}px;
-    }
+  .bor-rad-#{$i} {
+    border-radius: #{$i}px;
+  }
 }

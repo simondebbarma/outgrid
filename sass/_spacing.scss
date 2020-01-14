@@ -4,7 +4,6 @@ $spacing: 0.5;
 
 .m-auto {
   margin: auto;
-
 }
 
 .mx-auto {
@@ -19,7 +18,7 @@ $spacing: 0.5;
 
 @for $i from 0 through 5 {
   .gg-#{$i} {
-      gap: $i*$spacing*1rem;
+    gap: $i*$spacing*1rem;
   }
 
   .cg-#{$i} {
@@ -121,7 +120,6 @@ $spacing: 0.5;
   }
 }
 
-
 @for $i from 0 through 250 {
   .h#{$i} {
     height: #{$i}px;
@@ -132,34 +130,32 @@ $spacing: 0.5;
   }
 }
 
-@media screen and (min-width: $break-medium){
+@media screen and (min-width: $break-medium) {
   .m-md-auto {
     margin: auto;
-  
   }
-  
+
   .mx-md-auto {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .my-md-auto {
     margin-top: auto;
     margin-bottom: auto;
   }
 }
 
-@media screen and (min-width: $break-large){
+@media screen and (min-width: $break-large) {
   .m-lg-auto {
     margin: auto;
-  
   }
-  
+
   .mx-lg-auto {
     margin-left: auto;
     margin-right: auto;
   }
-  
+
   .my-lg-auto {
     margin-top: auto;
     margin-bottom: auto;
