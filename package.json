@@ -29,6 +29,7 @@
     "stylelint-config-recommended": "^3.0.0"
   },
   "dependencies": {
-    "browser-sync": "^2.26.7"
+    "browser-sync": "^2.26.7",
+    "sass-lint": "^1.13.1"
   }
 }
