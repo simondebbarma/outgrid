@@ -1,7 +1,7 @@
 $break-medium: 768px;
-$max-width-medium: 720px; 
+$max-width-medium: 720px;
 $break-large: 1200px;
-$max-width-large: 1144px; 
+$max-width-large: 1144px;
 
 
 /* ----------  Container  ---------- */
@@ -12,10 +12,15 @@ $max-width-large: 1144px;
 
 @mixin container-basics {
   @include grid();
+
   height: 100%;
 }
 
 .d-grid {
+  @include grid();
+}
+
+.d-sm-grid {
   @include grid();
 }
 
@@ -185,6 +190,10 @@ $max-width-large: 1144px;
 
 // #region Media Queries
 @media screen and (min-width: $break-medium) {
+  .d-md-grid {
+    @include grid();
+  }
+
   @for $i from 1 through 200 {
     .autofit-md-#{$i*5} {
       grid-template-columns: repeat(auto-fit, minmax(#{$i*5}px, 1fr));
@@ -236,6 +245,7 @@ $max-width-large: 1144px;
 
       .container-md-#{$i}-#{$j} {
         @include container-basics();
+
         max-width: $max-width-medium;
         grid-template-columns: repeat(#{$i}, 1fr);
         grid-template-rows: repeat(#{$j}, 1fr);
@@ -255,6 +265,10 @@ $max-width-large: 1144px;
 }
 
 @media screen and (min-width: $break-large) {
+  .d-lg-grid {
+    @include grid();
+  }
+
   @for $i from 1 through 200 {
     .autofit-lg-#{$i*5} {
       grid-template-columns: repeat(auto-fit, minmax(#{$i*5}px, 1fr));
@@ -306,6 +320,7 @@ $max-width-large: 1144px;
 
       .container-lg-#{$i}-#{$j} {
         @include container-basics();
+
         max-width: $max-width-large;
         grid-template-columns: repeat(#{$i}, 1fr);
         grid-template-rows: repeat(#{$j}, 1fr);
