@@ -1,4 +1,21 @@
+@use 'layouts/grid';
+
 $spacing: 0.5;
+
+.m-auto {
+  margin: auto;
+
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 
 @for $i from 0 through 5 {
   .gg-#{$i} {
@@ -112,5 +129,39 @@ $spacing: 0.5;
 
   .w#{$i} {
     width: #{$i}px;
+  }
+}
+
+@media screen and (min-width: $break-medium){
+  .m-md-auto {
+    margin: auto;
+  
+  }
+  
+  .mx-md-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .my-md-auto {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+}
+
+@media screen and (min-width: $break-large){
+  .m-lg-auto {
+    margin: auto;
+  
+  }
+  
+  .mx-lg-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .my-lg-auto {
+    margin-top: auto;
+    margin-bottom: auto;
   }
 }
