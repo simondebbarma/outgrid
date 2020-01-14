@@ -3,7 +3,6 @@
 module.exports = {
     "extends": "stylelint-config-recommended",
     "ignoreFiles": [
-        "app/bootstrap/**/*.less",
         "*.scss",
         "**/*.scss"
     ],
