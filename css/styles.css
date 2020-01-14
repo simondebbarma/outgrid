@@ -52,12 +52,20 @@ html {
     grid-template-columns: auto 1fr;
 }
 
+.hero-sub {
+    grid-template-columns: 1fr auto 1fr;
+}
+
 .color-gray {
     color: gray;
 }
 
 .hover-black:hover {
     color: black;
+}
+
+.submit-sm {
+    display: none;
 }
 
 .main-imgs {
@@ -67,6 +75,47 @@ html {
 }
 
 .main-container {
-    grid-auto-flow: dense;
-    width: auto;
+
+}
+
+@media screen and (max-width: 1024px) {
+    .nav-logo-text {
+        display: none;
+    }
+
+    .nav-test {
+        grid-template-columns: auto 1fr repeat(6, auto);
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero-sub-mid {
+        visibility: hidden;
+    }
+
+    .submit-lg {
+        display: none;
+    }
+
+    .submit-sm {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero-image {
+        max-height: 410px;
+    }
+
+    .hero-sub-mid {
+        display: none;
+    }
+
+    .hero-sub-right {
+        display: none;
+    }
+
+    .hero-sub-left {
+        width: 100%;
+    }
 }
