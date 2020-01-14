@@ -17,7 +17,7 @@
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://simonpeterdebbarma.github.io/outgrid/)
 
 ---
 
