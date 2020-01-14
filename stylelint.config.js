@@ -2,6 +2,11 @@
 
 module.exports = {
     "extends": "stylelint-config-recommended",
+    "ignoreFiles": [
+        "app/bootstrap/**/*.less",
+        "*.scss",
+        "**/*.scss"
+    ],
     "rules": {
         "at-rule-empty-line-before": ["always", {
             except: [
