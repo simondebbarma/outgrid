@@ -58,7 +58,7 @@ a {
   background-color: #0066ec; }
 
 .background-white {
-  background-color: #e6e6e6; }
+  background-color: white; }
 
 .overlay-greydient {
   height: 100%;
@@ -100,7 +100,7 @@ a {
   font-weight: bolder; }
 
 .text-white {
-  color: #e6e6e6; }
+  color: white; }
 
 .text-green {
   color: #1cec00; }
@@ -675,7 +675,7 @@ a {
 .blog {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-areas: "blog-content" "blog-aside-left" "blog-aside-right"; }
+  grid-template-areas: "blog-content" "blog-aside-left" "blog-aside-right"; }
 
 .blog-content {
   grid-area: blog-content; }

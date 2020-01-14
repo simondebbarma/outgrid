@@ -57,6 +57,10 @@ $break-large: 1024px;
   grid-auto-rows: auto;
 }
 
+.autoflow-dense {
+  grid-auto-flow: dense;
+}
+
 // #region autofit & autofill
 @for $i from 1 through 20 {
   .container-autofit-#{$i*50} {

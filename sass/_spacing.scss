@@ -2,14 +2,14 @@ $spacing: 0.5;
 
 @for $i from 0 through 5 {
   .gg-#{$i} {
-      gap: $i*$spacing*1rem;;
+      gap: $i*$spacing*1rem;
   }
 
   .cg-#{$i} {
     column-gap: $i*$spacing*1rem;
   }
 
-  .cr-#{$i} {
+  .rg-#{$i} {
     row-gap: $i*$spacing*1rem;
   }
 
