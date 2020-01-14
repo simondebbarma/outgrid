@@ -899,6 +899,10 @@ a {
   border-radius: 50px;
 }
 
+.underline-nohover {
+  text-decoration: underline;
+}
+
 .no-decoration,
 .underline-nohover:hover,
 .hover-underline,
@@ -912,7 +916,6 @@ a {
 .hover-underline-red:hover,
 .underline-black,
 .hover-underline-black:hover,
-.underline-nohover,
 .hover-underline:hover {
   text-decoration: underline;
 }
